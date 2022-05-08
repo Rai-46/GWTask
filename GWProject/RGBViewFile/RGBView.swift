@@ -103,6 +103,7 @@ struct RGBView: View {
 struct RGBView_Previews: PreviewProvider {
     static var previews: some View {
         RGBView()
+            .previewInterfaceOrientation(.portrait)
         
     }
 }
