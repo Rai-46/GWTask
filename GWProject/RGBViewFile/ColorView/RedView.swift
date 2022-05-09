@@ -13,6 +13,7 @@ struct RedView: View {
     
     var body: some View {
         Color(red: Double(viewModel.REDCounter) / 255, green: 0, blue: 0)
+
     }
 }
 

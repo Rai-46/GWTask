@@ -13,7 +13,6 @@ struct GreenView: View {
     
     var body: some View {
         Color(red: 0, green: Double(viewModel.GREENCounter) / 255, blue: 0)
-        
     }
 }
 

@@ -20,6 +20,9 @@
 		A2BA10B1281BF0C5005E1231 /* GWProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BA10B0281BF0C5005E1231 /* GWProjectTests.swift */; };
 		A2BA10BB281BF0C5005E1231 /* GWProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BA10BA281BF0C5005E1231 /* GWProjectUITests.swift */; };
 		A2BA10BD281BF0C5005E1231 /* GWProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BA10BC281BF0C5005E1231 /* GWProjectUITestsLaunchTests.swift */; };
+		A2E7E44F2828C71000D700B2 /* RedGreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E7E44E2828C71000D700B2 /* RedGreenView.swift */; };
+		A2E7E4512828C72200D700B2 /* RedBlueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E7E4502828C72200D700B2 /* RedBlueView.swift */; };
+		A2E7E4532828C72F00D700B2 /* GreenBlueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E7E4522828C72F00D700B2 /* GreenBlueView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,9 @@
 		A2BA10B6281BF0C5005E1231 /* GWProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GWProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2BA10BA281BF0C5005E1231 /* GWProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GWProjectUITests.swift; sourceTree = "<group>"; };
 		A2BA10BC281BF0C5005E1231 /* GWProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GWProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A2E7E44E2828C71000D700B2 /* RedGreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedGreenView.swift; sourceTree = "<group>"; };
+		A2E7E4502828C72200D700B2 /* RedBlueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedBlueView.swift; sourceTree = "<group>"; };
+		A2E7E4522828C72F00D700B2 /* GreenBlueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenBlueView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +96,9 @@
 				A21B9D922826519500E147DA /* GreenView.swift */,
 				A21B9D902826518A00E147DA /* BlueView.swift */,
 				A21B9D972826592100E147DA /* AllColorView.swift */,
+				A2E7E44E2828C71000D700B2 /* RedGreenView.swift */,
+				A2E7E4502828C72200D700B2 /* RedBlueView.swift */,
+				A2E7E4522828C72F00D700B2 /* GreenBlueView.swift */,
 			);
 			path = ColorView;
 			sourceTree = "<group>";
@@ -291,12 +300,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2E7E4532828C72F00D700B2 /* GreenBlueView.swift in Sources */,
 				A21B9D982826592100E147DA /* AllColorView.swift in Sources */,
 				A21B9D912826518A00E147DA /* BlueView.swift in Sources */,
 				A21B9D9A2826A1FF00E147DA /* ContentView.swift in Sources */,
 				A21B9D8D28264D5300E147DA /* RGBViewModel.swift in Sources */,
 				A21B9D8F2826517F00E147DA /* RedView.swift in Sources */,
 				A2BA10A2281BF0C4005E1231 /* RGBView.swift in Sources */,
+				A2E7E4512828C72200D700B2 /* RedBlueView.swift in Sources */,
+				A2E7E44F2828C71000D700B2 /* RedGreenView.swift in Sources */,
 				A2BA10A0281BF0C4005E1231 /* GWProjectApp.swift in Sources */,
 				A21B9D932826519500E147DA /* GreenView.swift in Sources */,
 			);

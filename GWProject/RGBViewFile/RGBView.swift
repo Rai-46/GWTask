@@ -32,32 +32,51 @@ struct RGBView: View {
                     GeometryReader{ geometry in
                         VStack(spacing: 0){
                             HStack(spacing: 0){
-                    
+                                
+                                
                                 RedView()
-                                    //大きさを画面３等分に設定（正方形）
-                                    .frame(width: geometry.size.width / 3, height: geometry.size.width / 3)
-                                    //上からRの文字を追加
-                                    .overlay(Text("R").foregroundColor(.gray).font(.largeTitle).fontWeight(.heavy))
+                                //大きさを画面３等分に設定（正方形）
+                                    .frame(width: (geometry.size.width * 2) / 9, height: geometry.size.width / 3)
+                                
+                                RedGreenView()
+                                    .frame(width: geometry.size.width / 9 , height: geometry.size.width / 3)
+                                    
+                                
                                 
                                 GreenView()
-                                    .frame(width: geometry.size.width / 3, height: geometry.size.width / 3)
-                                    .overlay(Text("G").foregroundColor(.gray).font(.largeTitle).fontWeight(.heavy))
+                                    .frame(width: (geometry.size.width * 2) / 9, height: geometry.size.width / 3)
                                 
-                                BlueView()
-                                    .frame(width: geometry.size.width / 3, height: geometry.size.width / 3)
-                                    .overlay(Text("B").foregroundColor(.gray).font(.largeTitle).fontWeight(.heavy))
-                            }
-                        
-                            AllColorView()
-                                //横幅の半分の大きさで表示（正方形）
-                                .frame(width: geometry.size.width / 1.5, height: geometry.size.width / 1.5)
-                                .overlay(Text("RGB").foregroundColor(.gray).font(.largeTitle).fontWeight(.heavy))
-                                .border(Color.black, width: 1)
-                                .offset(x: 0, y: 30)
+                                
+                            }.offset(x: (geometry.size.width * 2) / 9 , y: 0)
                             
-                        }
+                            
+                            
+                            ZStack{
+                                BlueView()
+                                    .frame(width: geometry.size.width / 3, height: (geometry.size.width) / 3)
+                                    .offset(x: geometry.size.width / 3 - (geometry.size.width / 9) ,y: -(geometry.size.width / 9) )
+                                
+                                HStack(spacing: 0){
+                                    RedBlueView()
+                                        .frame(width: geometry.size.width / 9, height: geometry.size.width / 9)
+                                        .border(Color.black, width: 1)
+                                    
+                                    AllColorView()
+                                        .frame(width: geometry.size.width / 9, height: geometry.size.width / 9)
+                                        .border(Color.black, width: 1)
+                                    
+                                    GreenBlueView()
+                                        .frame(width: geometry.size.width / 9, height: geometry.size.width / 9)
+                                        .border(Color.black, width: 1)
+                                        
+                                }.offset(x: geometry.size.width * 2 / 9, y: -(geometry.size.width * 2 / 9))
+                                
+                            }
+                            
+                            
+                        }.offset(y: geometry.size.height / 4)
                         
-                    }.offset(x: 0, y: 20)
+                    }
                 }
                 
                 
@@ -96,7 +115,7 @@ struct RGBView: View {
             .navigationBarTitle("RGBカラー調整", displayMode: .inline)
             
         }
-            }
+    }
     
 }
 

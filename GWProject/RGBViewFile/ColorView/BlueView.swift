@@ -14,7 +14,6 @@ struct BlueView: View {
     
     var body: some View {
         Color(red: 0, green: 0, blue: Double(viewModel.BLUECounter) / 255)
-        
     }
 }
 
